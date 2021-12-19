@@ -1,0 +1,37 @@
+
+ 1. pom.xml - ojdbc6, mybatis, mybatis-spring, common-dbcp, spring-orm
+ 
+ 2. web.xml - root-context -> ApplicationContext , url pattern(*.do), filter 설정
+ 
+ 3. WEB-INF/spring/sqls/text.sql 파일 생성
+ 
+ 4. src / main / resources / properties /db.properties 
+ 
+ 5. src / main / resources / sqls / mapper.xml
+ 
+ 6. WEB-INF / spring / sqls / config.xml 
+ 
+ 7. dto, dao, biz 만들기
+ 
+ 8. applicationContext, servlet-context, config, mapper
+ 
+ 
+ 
+ *context param 으로 설정되 있다: 프로젝트 전체에 적용되는 내용?
+ 
+ orm(object relational mapping) 객체와 관계를 연결시켜주고 사용하도록 도와줌
+ 
+ -------------------------------------------------------------------------
+ --AOP
+ 9. pom.xml  -aspectjweaver, aspectjrt 추가
+ 10. com.hello.mvc02.common.aop.LogAop(.java)
+ 11. aop-context.xml
+ 12. web.xml에 aop-context.xml 추가 
+ 13. src/main/resources/log4j.xml (logger 추가, trace)
+ 
+ -- filter 
+ 14. pom.xml org.apache.commons  commons-lang3
+ 15. com.hello.mvc02.common.filter.LogFilter(.java)
+ 16. web.xml에 filter 적용
+ --------------------------------------------------------------------------
+ 

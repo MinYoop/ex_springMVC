@@ -1,0 +1,8 @@
+1.pom.xml에서 -ojdbc6, mybatis, mtbatis-spring, commons-dbcp, spring-orm 다운
+2.web.xml에서 root-context->applicationContext, url pattern(*.do), encoding filter
+3.WEB-INF/spring/sqls/db/sql
+4.src/main/resources/properties/db.properties
+5.src/main/resources/sqls/mapper.xml
+6.WEB-INF/spring/sqls/config.xml
+7.dto.,dao,biz
+8.applicationContext, servlet-context, config, mapper

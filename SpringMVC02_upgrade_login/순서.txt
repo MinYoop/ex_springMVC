@@ -1,0 +1,30 @@
+1. pom.xml - ojdbc6, mybatis, mybatis-spring, commons-dbcp, spring-orm
+2. web.xml - url pattern(*.do), filter
+3. WEB-INF/spring/sqls/test.sql
+4. src/main/resources/properties/db.properties
+5. src/main/resources/sqls/mapper.xml
+6. WEB-INF/spring/sqls/config.xml
+7. dto. dao, biz 생성  / com.hello.mvc02.dto , com.hello.mvc02.model.biz , com.hello.mvc02.model.dao
+8. applicationContext, servlet-context, config, mapper
+
+
+
+
+dbcp : database connection pool
+------------------------------------------
+9. AOP POM.XML - ASPECTJWEAVER,ASPECTJRT
+10. com.hello.mvc02.common.aop라고 패키지를 만든다 그안에 LogAop(.java)를 만든다
+11. aop-context.xml
+12. web.xml에 aop-context.xml 추가
+13. src/main/resources/log4j.xml(logger 추가, trace)
+--filter
+14. pom.xml에 commons-lang3 넣기
+15. com.hello.mvc02.common.filter.LogFilter(.java) 
+16. web.xml에 filter 적용
+----------------------------------------------------------------------------------------------
+
+17. pom.xml에 jackson-core-asl, jackson-mapper-asl
+ (group id:org.codehaus.jackson)
+18. index.jsp -> controller -> login.jsp
+19. mapper, dao(daoImpl), biz(bizImpl), controller
+ 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="customer">
+<!--   <cache-ref namespace="customer"/> -->
+  
+  <select id="selectList" resultType="CustomerDto">
+  SELECT ID,PASSWORD,NAME
+  FROM TB_CUSTOMER
+  </select>
+
+<select id="selectOne" resultType="CustomerDto" parameterType="String">
+	SELECT ID,PASSWORD,NAME FROM TB_CUSTOMER WHERE ID=#{id}
+</select>
+
+<insert id="insert">
+INSERT INTO TB_CUSTOMER VALUES(#{id},#{password},#{name})
+</insert>
+
+<delete id="delete" >
+	DELETE FROM TB_CUSTOMER WHERE ID=#{id}
+</delete>
+
+<update id="update" parameterType="CustomerDto">
+	UPDATE TB_CUSTOMER SET PASSWORD=#{password}, NAME=#{name} WHERE ID=#{id}
+</update>
+</mapper>

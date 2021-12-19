@@ -1,0 +1,10 @@
+
+1. pom.xml - ojdbc6, mybatis, mybatis-spring, commons-dbcp, spring-orm 다운받음
+
+2. web.xml - root-context를 applictionContext로 바꾸고 appServlet 안에 넣어줬다 그리고 url pattern(*.do), filter
+3. WEB-INF/spring/sqls/test.sql
+4. src/main/resources/properties/db.properties
+5. src/main/resources/sqls/mapper.xml
+6. WEB-INF/spring/sqls/config.xml
+7. dto, dao, biz
+8. applicationContext, servlet-context, config, mapper
